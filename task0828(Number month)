@@ -1,0 +1,35 @@
+package com.javarush.task.task08.task0828;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.*;
+
+/*
+Номер месяца
+Программа вводит с клавиатуры имя месяца и выводит его номер на экран в виде: "May is the 5 month".
+Используйте коллекции.*/
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        ArrayList<String> arrayList = new ArrayList<>();
+        arrayList.add("January");
+        arrayList.add("February");
+        arrayList.add("March");
+        arrayList.add("April");
+        arrayList.add("May");
+        arrayList.add("June");
+        arrayList.add("July");
+        arrayList.add("August");
+        arrayList.add("September");
+        arrayList.add("October");
+        arrayList.add("November");
+        arrayList.add("December");
+        String b = new Scanner(System.in).nextLine();
+        for (int i = 0; i < arrayList.size(); i++) {
+            if (b.equals(arrayList.get(i))){
+                System.out.println(arrayList.get(i) + " is the " + (i+1) + " month");
+            }
+        }
+    }
+}
